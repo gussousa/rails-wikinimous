@@ -1,7 +1,7 @@
 <%= form_for(@article) do |f| %>
   <%= f.label :title, class:"control-label required" %>
-  <%= f.text_field :title, class: "form-control" %>
+  <%= f.text_field :title, class: "form-control mb-2" %>
   <%= f.label :content, class: "control-label required" %>
-  <%= f.text_field :content, class: "form-control", style: "" %>
-  <%= f.submit class: "btn btn-default btn-primary" %>
+  <%= f.text_area :content, class: "form-control mb-4 large", rows: "10" %>
+  <%= f.submit class: "btn-blue-to-orange" %>
 <% end %>

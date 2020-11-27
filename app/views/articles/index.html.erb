@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="col-sm-8 col-sm-offset-2">
+    <div class="col col-12">
       <% @articles.each do |article| %>
         <article>
           <h2><%= link_to "#{article.title}", article_path(article) %></h2>

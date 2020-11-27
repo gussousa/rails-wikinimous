@@ -14,8 +14,99 @@
  *= require_self
  */
  @import "bootstrap/scss/bootstrap";
+ 
+  $mylightblue: rgb(54, 177, 199);
+  $myorange: rgb(207, 112, 23);
 
- #editor {
-  /** Setting height is also important, otherwise editor wont showup**/
+ body {
+   background-color: rgb(80, 80, 80);
+   color: rgb(160, 160, 160);
+ }
+
+.container {
+  width: 700px;
+}
+
+ #editor { 
+  position: relative;
   height: 300px;
+}
+
+
+.navbar {
+  background-color: rgb(26, 26, 26);
+  height: 80px;
+  margin-bottom: 40px;
+}
+
+.navbar a {
+  color: rgba(255, 255, 255, 0.596);
+  padding: 30px;
+  background-image: linear-gradient(to left, rgba(47, 156, 175, 0.219), rgba(255, 255, 255, 0));
+  margin-bottom: 0px;
+  border-right: 3px solid $mylightblue;
+  transition: 0.5s;
+}
+
+.navbar a:hover {
+  color: $mylightblue;
+}
+
+.navbar-right a {
+  background-image: linear-gradient(to right, rgba(139, 69, 4, 0.459), rgba(255, 255, 255, 0));
+  border-left: 3px solid $myorange;
+  border-right: none;
+}
+
+.navbar-right a:hover {
+  color: $myorange
+}
+
+
+i {
+  color: rgba(255, 255, 255, 0.473);
+  transition: 0.5s;
+}
+
+i:hover{
+  color: rgba(255, 255, 255, 0.76);
+}
+
+a {
+  color: $mylightblue;
+  transition: 0.6s;
+}
+
+a:hover {
+  text-decoration: none;
+  color: $myorange;
+}
+
+article {
+  // border-bottom: 1px solid rgb(109, 109, 109);
+  border-left: 5px solid rgb(109, 109, 109);
+  padding: 0px 10px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: x-large;
+}
+
+h1 {
+  font-size: xx-large;
+  color: $mylightblue;
+}
+
+.btn-blue-to-orange {
+  color: rgb(255, 255, 255);
+  background-color: $mylightblue;
+  padding: 8px;
+  border-radius: 5px;
+  border: 0px;
+  transition: 0.5s;
+}
+
+.btn-blue-to-orange:hover {
+  background-color: $myorange;
 }
