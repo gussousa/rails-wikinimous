@@ -5,11 +5,26 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+  <div class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <%= link_to "Wikinimous Copy", articles_path %>
+    </div>
+    <div>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <%= link_to "New Article", new_article_path %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
     <%= yield %>
   </body>
 </html>
